@@ -6,10 +6,12 @@ import MovieQuotes from './movie';
 import SignIn from './sign_in';
 import SignUp from './sign_up';
 import Nav from './nav';
+import '../assets/css/app.css';
+
 
 
 const App = () => (
-    <div>
+    <div className="app">
         <Nav />
         <div className="container">
             <Route path="/" exact component={Home}/>
