@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Field , reduxForm } from 'redux-form';
 import { renderInput } from '../helpers';
+import { signUp }  from '../actions';
 
 class SignUp extends React.Component{
 
@@ -8,6 +10,8 @@ class SignUp extends React.Component{
 
     handleSignUp(value){
         console.log('vals', value);
+
+        this.props.signUp(value);
     }
 
 
@@ -61,4 +65,4 @@ SignUp = reduxForm({
 })(SignUp);
 
 
-export default SignUp;
+export default connect(null,{signUp})(SignUp);
