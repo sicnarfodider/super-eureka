@@ -6,14 +6,31 @@
 body {
     margin: 0;
 }
+#root{
 
+}
 .app {
-    background-color: #000;
-    color: #fff;
+    background-image: url(../images/mdc.jpg);
+    background-size: cover;
+}
+
+.card {
+    opacity: 0.8;
+}
+
+.sign, h1{
     font-family: blocky;
-    font-size: 25px;
-    padding: 50px;
-    text-align: center;
+    color: aliceblue;
+}
+
+p{
+    font-size:1em;
+    color: yellow;
+    font-family: sans-serif;
+}
+
+button{
+    opacity: 1;
 }
 
 .app .logo {
