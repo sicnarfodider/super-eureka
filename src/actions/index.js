@@ -14,9 +14,10 @@ export function signUp(cred){
 
             dispatch({type: types.SIGN_UP})
         }).catch(err=>{
+            console.log('err', err);
             dispatch({
                 type: types.ERROR,
-                payload: 'invalid sign in information'
+                payload: err.response.data.error
             })
         })
     }
