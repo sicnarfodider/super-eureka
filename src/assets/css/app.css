@@ -12,6 +12,7 @@ body {
 .app {
     background-image: url(../images/mdc.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
 .card {
